@@ -6,12 +6,12 @@
 ---
 
 ## 🚀Live Demo
-.com
+[SportSense](https://sportsense.vercel.app/)
 
 ## 📷Screenshots
 ![SportSense Laptop View](./src/assets/sportsense%20laptop.png)
 
-
+---
 
 ## ✨ Overview
 
