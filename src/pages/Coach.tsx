@@ -28,15 +28,12 @@ const Coach = () => {
 
   return (
     <div className="container mx-auto py-20 space-y-16">
-      {/* Get a Coach Section */}
       <section className="text-center">
-        {/* Heading */}
         <h2 className="text-4xl font-bold mb-4">Get a Coach</h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
           Connect with certified human coaches for personalized training plans and mentorship.
         </p>
 
-        {/* Action Buttons */}
         <div className="flex justify-center gap-4 mb-12">
           <Button onClick={() => navigate("/join")}>Find a Coach</Button>
           <Button variant="outline" onClick={() => navigate("/coaches")}>
@@ -44,13 +41,11 @@ const Coach = () => {
           </Button>
         </div>
 
-        {/* Suggested Coaches Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
           <Zap className="w-4 h-4 text-primary" />
           <span className="text-sm text-primary font-medium">Suggested Coaches</span>
         </div>
 
-        {/* Suggested Coaches Showcase */}
 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
   {coaches.filter((c) => c.featured).map((coach) => (
     <CoachCard

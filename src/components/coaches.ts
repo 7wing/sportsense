@@ -1,12 +1,10 @@
-// Define a reusable TrainingSession type
 export type TrainingSession = {
   id: string;
-  date: string; // ISO date string
+  date: string;
   type: string;
   notes: string;
 };
 
-// Extend Coach type to include optional sessions
 export type Coach = {
   id: string;
   name: string;

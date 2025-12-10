@@ -1,7 +1,7 @@
 {
   "name": "sportsense",
-  "private": true,
   "version": "1.0.0",
+  "description": "Modern sports analytics and UI showcase built with React, Radix UI and Tailwind.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +9,26 @@
     "start": "vite preview",
     "lint": "eslint ."
   },
+  "keywords": [
+    "sports",
+    "analytics",
+    "dashboard",
+    "React",
+    "Radix UI",
+    "TailwindCSS",
+    "Vite",
+    "TypeScript",
+    "data visualization",
+    "recharts",
+    "modern UI",
+    "responsive design",
+    "react-query",
+    "zod validation",
+    "form handling",
+    "component library"
+  ],
+  "author": "7wing",
+  "license": "MIT",
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",

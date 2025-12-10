@@ -11,7 +11,7 @@ const CoachProfileModal = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search);
 
-  const prefilledGoal = query.get("goal") || ""; // read goal from URL
+  const prefilledGoal = query.get("goal") || "";
   const [goal, setGoal] = useState(prefilledGoal);
   const [availability, setAvailability] = useState("");
 
@@ -25,7 +25,6 @@ const CoachProfileModal = () => {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <Card className="max-w-md w-full shadow-glow relative">
-        {/* Small X button in top-right */}
         <button
           onClick={() => navigate(-1)}
           className="absolute top-3 right-3 text-muted-foreground hover:text-foreground"
@@ -41,7 +40,6 @@ const CoachProfileModal = () => {
           <p className="text-center text-muted-foreground">{coach.specialty}</p>
           <p className="text-center mb-6">{coach.bio}</p>
 
-          {/* Training Goal tailored per coach */}
           <fieldset className="space-y-2">
             <legend className="text-sm font-medium text-foreground">Training Goal</legend>
             <select
@@ -58,7 +56,6 @@ const CoachProfileModal = () => {
             </select>
           </fieldset>
 
-          {/* Availability */}
           <fieldset className="space-y-2">
             <legend className="text-sm font-medium text-foreground">Availability</legend>
             <select

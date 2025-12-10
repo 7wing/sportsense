@@ -18,9 +18,7 @@ const AIAssistant = () => {
           </p>
         </div>
 
-        {/* Grid with equal heights on md+ screens */}
         <div className="grid md:grid-cols-2 gap-6 mb-8 justify-center items-start md:items-stretch">
-          {/* AI Insights Panel */}
           <Card className="flex flex-col h-full border-primary/20 shadow-glow w-full sm:w-[95%] md:w-full">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -50,7 +48,6 @@ const AIAssistant = () => {
             </CardContent>
           </Card>
 
-          {/* AI Chat Interface */}
           <Card className="flex flex-col h-full border-primary/20 shadow-glow w-full sm:w-[95%] md:w-full">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -89,7 +86,6 @@ const AIAssistant = () => {
           </Card>
         </div>
 
-        {/* Quick Actions */}
         <div className="flex flex-wrap gap-3 justify-center">
           <Button variant="outline" className="border-primary/50">
             <Brain className="w-4 h-4 mr-2" />

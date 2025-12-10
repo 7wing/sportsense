@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-32">
-      {/* Parallax Background Image */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -16,19 +15,15 @@ const Hero = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* Dark overlay for contrast */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        {/* Tagline */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/40 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <Activity className="w-4 h-4 text-primary animate-pulse" />
           <span className="text-sm font-medium">Next-Gen Athletic Intelligence</span>
         </div>
 
-        {/* Title */}
         <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
           Train Smarter with
           <br />
@@ -37,13 +32,11 @@ const Hero = () => {
           </span>
         </h1>
 
-        {/* Subtitle */}
         <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
           Real-time performance metrics, AI-powered coaching and immersive training simulations
           to elevate your athletic performance.
         </p>
 
-        {/* CTA */}
         <div className="flex justify-center mb-20 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
           <Link to="/coach">
             <Button
@@ -55,7 +48,6 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500">
           <FeatureCard
             icon={<Activity className="w-8 h-8 text-primary" />}
@@ -75,7 +67,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom Gradient */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-5" />
     </section>
   );

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Activity } from "lucide-react";
 
 const WelcomeModal = () => {
   const [open, setOpen] = useState(false);

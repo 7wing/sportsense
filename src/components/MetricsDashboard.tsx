@@ -33,7 +33,6 @@ const MetricsDashboard = () => {
           <p className="text-lg text-muted-foreground">Real-time analytics to optimize your training</p>
         </div>
 
-        {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <StatCard
             icon={<Activity className="w-5 h-5" />}
@@ -65,7 +64,6 @@ const MetricsDashboard = () => {
           />
         </div>
 
-        {/* Charts */}
         <div className="grid md:grid-cols-2 gap-6">
           <Card className="border-border/50 shadow-lg">
             <CardHeader>
